@@ -1,0 +1,49 @@
+{
+    "task_info": {
+        "task_camera0": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd {progdir} && python main_entity.py run_task -n task_camera -en task_forward -a {docker_addr} -ra {next_addr} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera1": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd {progdir} && python main_entity.py run_task -n task_camera -en task_forward -a {docker_addr} -ra {next_addr} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_findObject": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd {progdir} && python main_entity.py run_task -n task_findObj -en task_findObj -a {self_addr} -ra {next_addr} -al local &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {
+                "Device.EDGE_SERVER": {
+                    "Flavor.GPU": 100
+                }
+            },
+            "GtInfoEnum.RESRC_RQMT": {
+                "Flavor.CPU": {
+                    "Hardware.CPU": 60,
+                    "Hardware.HD": 251658240,
+                    "Hardware.RAM": 8589934592,
+                    "Hardware.GPU": 0
+                },
+                "Flavor.GPU": {
+                    "Hardware.CPU": 5,
+                    "Hardware.HD": 251658240,
+                    "Hardware.RAM": 34359738368,
+                    "Hardware.GPU": 60
+                }
+            }
+        }
+    },
+    "task_mapping": {
+        "task_camera0": "CAMERA.0",
+        "task_camera1": "CAMERA.1",
+        "task_findObject": "EDGE_SERVER.0"
+    },
+    "task_links": {
+    }
+}

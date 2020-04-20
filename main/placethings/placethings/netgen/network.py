@@ -121,7 +121,9 @@ class DataPlane(object):
             # exectime = G_map.node[task_name][GtInfo.CUR_LATENCY]
             next_task = self._get_next_task(G_map, task_name)
             if not next_task:
-                assert device_cat == DeviceCategory.ACTUATOR
+                # YC: removed this assertion
+                #   because we don't have an actuator
+                # assert device_cat == DeviceCategory.ACTUATOR
                 next_ip, next_port = None, None
             else:
                 next_device_name = G_map.node[next_task][GtInfo.CUR_DEVICE]

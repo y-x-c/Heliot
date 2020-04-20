@@ -7,7 +7,9 @@ import logging
 
 from placethings import ilp_solver
 from placethings.config.common import LinkHelper
-from placethings.definition import GnInfo
+from placethings.definition import GnInfo, GtInfo, GdInfo
+
+from placethings.graph_gen import task_graph
 from placethings.graph_gen.wrapper import graph_gen
 from placethings.config.wrapper.config_gen import Config
 
@@ -54,18 +56,32 @@ class ConfigDataHelper(object):
         self.Gn, self.Gnd, self.Gd = graph_gen.create_topo_device_graph(
             self.cfg, self.is_export, export_suffix=self.update_id)
 
-    def update_task_map(self):
-        # result_mapping returns the task to the devices
-        # G_map is the updated task graph. Tasks, connectivity of tasks and their attributes (resources, how to invoke)
-        G_map, result_mapping = ilp_solver.place_things(
-            self.Gt, self.Gd,
-            is_export=self.is_export, export_suffix=self.update_id)
-        self.G_map = G_map
-        self.result_mapping = result_mapping
-        if self.update_id == 0:
-            # init update
-            self.init_result_mapping = result_mapping
-        log.info('mapping result: {}'.format(result_mapping))
+    def update_task_map(self, use_ilp=True):
+        if not use_ilp:
+            self.G_map = self.Gt
+            log.info('using mapping in the config')
+            self.result_mapping = result_mapping = {}
+            for t in self.Gt.nodes():
+                d = self.Gt.node[t][GtInfo.DEVICE]
+                result_mapping[t] = d
+                log.info('map {} -> {}'.format(t, d))
+            self.Gt = task_graph.update_graph(
+                result_mapping, self.Gt, self.Gd, False, '')
+            if self.update_id == 0:
+                # init update
+                self.init_result_mapping = result_mapping
+        else:
+            # result_mapping returns the task to the devices
+            # G_map is the updated task graph. Tasks, connectivity of tasks and their attributes (resources, how to invoke)
+            G_map, result_mapping = ilp_solver.place_things(
+                self.Gt, self.Gd,
+                is_export=self.is_export, export_suffix=self.update_id)
+            self.G_map = G_map
+            self.result_mapping = result_mapping
+            if self.update_id == 0:
+                # init update
+                self.init_result_mapping = result_mapping
+            log.info('mapping result: {}'.format(result_mapping))
 
     def update_max_latency_log(self):
         max_latency = ilp_solver.get_max_latency(

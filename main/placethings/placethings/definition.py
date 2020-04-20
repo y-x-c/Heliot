@@ -85,6 +85,7 @@ class Device(Enum):
     T2_MICRO = auto()
     T3_LARGE = auto()
     P3_2XLARGE = auto()
+    EDGE_SERVER = auto()
     # sensor
     SMOKE = auto()
     CAMERA = auto()
