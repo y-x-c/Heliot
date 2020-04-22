@@ -3,30 +3,30 @@
         "NwDeviceCategory.BACKBONE": {
             "NwDevice.BB_SWITCH": {
                 "LinkType.ANY": {
-                    "LinkInfo.ULINK_BW": 2147483647,
+                    "LinkInfo.ULINK_BW": 1073741824,
                     "LinkInfo.PROTOCOL": "NwLink.ETHERNET",
                     "LinkInfo.N_LINKS": 2147483647,
-                    "LinkInfo.DLINK_BW": 2147483647
+                    "LinkInfo.DLINK_BW": 1073741824
                 },
                 "LinkType.LAN": {
-                    "LinkInfo.ULINK_BW": 104857600,
+                    "LinkInfo.ULINK_BW": 1073741824,
                     "LinkInfo.PROTOCOL": "NwLink.ETHERNET",
                     "LinkInfo.N_LINKS": 5,
-                    "LinkInfo.DLINK_BW": 104857600
+                    "LinkInfo.DLINK_BW": 1073741824
                 }
             },
             "NwDevice.BB_AP": {
                 "LinkType.WAN": {
-                    "LinkInfo.ULINK_BW": 2147483647,
+                    "LinkInfo.ULINK_BW": 1073741824,
                     "LinkInfo.PROTOCOL": "NwLink.ETHERNET",
                     "LinkInfo.N_LINKS": 1,
-                    "LinkInfo.DLINK_BW": 2147483647
+                    "LinkInfo.DLINK_BW": 1073741824
                 },
                 "LinkType.LAN": {
                     "LinkInfo.ULINK_BW": 157286400,
                     "LinkInfo.PROTOCOL": "NwLink.WIFI",
                     "LinkInfo.N_LINKS": 2147483647,
-                    "LinkInfo.DLINK_BW": 52428800
+                    "LinkInfo.DLINK_BW": 157286400
                 }
             }
         }
