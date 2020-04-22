@@ -52,7 +52,7 @@ def _init_netsim(topo_device_graph, Gd, G_map):
     log.info("docker0 ip={}".format(docker0_ip))
     # simulate network
     data_plane = DataPlane(topo_device_graph, docker0_ip=docker0_ip)
-    # data_plane.add_manager('BB_SWITCH.0')
+    data_plane.add_manager('BB_SWITCH.0')
     data_plane.deploy_task(G_map, Gd)
     return data_plane
 
