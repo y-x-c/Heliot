@@ -45,8 +45,8 @@ def _init_netsim(topo_device_graph, Gd, G_map):
     # get containernet (docker) subnet ip
     # This will be there is containernet is installed, which install the docker
     cmd = (
-        "ifconfig | grep -A 1 'docker'"
-        " | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1")
+        "ifconfig | grep -A 1 'eth0'"
+        " | tail -1 | cut -d ' ' -f 10")
     proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
     docker0_ip = proc.communicate()[0].replace('\n', '')
     log.info("docker0 ip={}".format(docker0_ip))
