@@ -19,7 +19,7 @@ log = logging.getLogger()
 
 class NetManager(object):
     _NEXT_IP_NUM = 100
-    _NEXT_DOCKER_IP_NUM = 2
+    _NEXT_DOCKER_IP_NUM = 3
     _NEXT_HOST_ID = 0
     _NEXT_SWITCH_ID = 0
     _HOST_PREFIX = 'h'
