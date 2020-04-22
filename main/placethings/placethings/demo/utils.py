@@ -58,7 +58,6 @@ class ConfigDataHelper(object):
 
     def update_task_map(self, use_ilp=True):
         if not use_ilp:
-            self.G_map = self.Gt
             log.info('using mapping in the config')
             self.result_mapping = result_mapping = {}
             for t in self.Gt.nodes():
@@ -67,6 +66,7 @@ class ConfigDataHelper(object):
                 log.info('map {} -> {}'.format(t, d))
             self.Gt = task_graph.update_graph(
                 result_mapping, self.Gt, self.Gd, False, '')
+            self.G_map = self.Gt
             if self.update_id == 0:
                 # init update
                 self.init_result_mapping = result_mapping

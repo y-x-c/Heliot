@@ -45,5 +45,11 @@
         "task_findObject": "EDGE_SERVER.0"
     },
     "task_links": {
+        "task_camera0 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera1 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        }
     }
 }
