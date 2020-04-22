@@ -141,7 +141,8 @@ class DataPlane(object):
                 progdir=progdir,
                 self_addr='{}:{}'.format(ip, port),
                 docker_addr='{}:{}'.format(docker_ip, docker_port),
-                next_addr='{}:{}'.format(next_ip, next_port))
+                next_addr='{}:{}'.format(next_ip, next_port),
+                next_ip=next_ip, next_port=next_port)
             self.worker_dict[device_name] = cmd
 
     def run_worker(self, device_name):
