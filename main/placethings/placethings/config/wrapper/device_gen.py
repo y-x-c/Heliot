@@ -89,7 +89,8 @@ class DeviceLinks:
             latency (int)
             device_list, nw_device_list (list)
         """
-        assert dev in device_list
+        # FIXME: YC: temporarily disabled for testing
+        # assert dev in device_list
         assert nw_dev in nw_device_list
         assert type(latency) is int
 

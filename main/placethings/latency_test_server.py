@@ -43,3 +43,4 @@ port = 18800
 server = msgpackrpc.Server(InferenceServer())
 server.listen(msgpackrpc.Address(ip, port))
 server.start()
+

@@ -164,14 +164,16 @@ class TaskInfo:
             data = {}
         self.data = data
 
-    def add_task(self, task_name):
+    def add_task(self, task_name, exec_cmd=None):
         """
         args:
             task_name (str)
         """
         assert task_name not in self.data
+        if exec_cmd is None:
+            exec_cmd = {}
         self.data[task_name] = {
-            GtInfo.EXEC_CMD: {},
+            GtInfo.EXEC_CMD: exec_cmd,
             GtInfo.LATENCY_INFO: {},
             GtInfo.RESRC_RQMT: {},
         }
@@ -238,8 +240,8 @@ class AllTaskData(object):
             task_info=self.task_info.data)
         json_utils.export_bundle(filepath, filemap)
 
-    def add_task(self, task_name):
-        self.task_info.add_task(task_name)
+    def add_task(self, task_name, exec_cmd=None):
+        self.task_info.add_task(task_name, exec_cmd=exec_cmd)
         self.task_mapping.add_task(task_name)
 
     def add_flavor(self, task_name, flavor_obj):
