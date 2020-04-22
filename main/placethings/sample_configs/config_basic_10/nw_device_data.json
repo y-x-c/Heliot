@@ -1,0 +1,52 @@
+{
+    "device_spec": {
+        "NwDeviceCategory.BACKBONE": {
+            "NwDevice.BB_SWITCH": {
+                "LinkType.ANY": {
+                    "LinkInfo.ULINK_BW": 1073741824,
+                    "LinkInfo.PROTOCOL": "NwLink.ETHERNET",
+                    "LinkInfo.N_LINKS": 2147483647,
+                    "LinkInfo.DLINK_BW": 1073741824
+                },
+                "LinkType.LAN": {
+                    "LinkInfo.ULINK_BW": 1073741824,
+                    "LinkInfo.PROTOCOL": "NwLink.ETHERNET",
+                    "LinkInfo.N_LINKS": 5,
+                    "LinkInfo.DLINK_BW": 1073741824
+                }
+            },
+            "NwDevice.BB_AP": {
+                "LinkType.WAN": {
+                    "LinkInfo.ULINK_BW": 1073741824,
+                    "LinkInfo.PROTOCOL": "NwLink.ETHERNET",
+                    "LinkInfo.N_LINKS": 1,
+                    "LinkInfo.DLINK_BW": 1073741824
+                },
+                "LinkType.LAN": {
+                    "LinkInfo.ULINK_BW": 157286400,
+                    "LinkInfo.PROTOCOL": "NwLink.WIFI",
+                    "LinkInfo.N_LINKS": 2147483647,
+                    "LinkInfo.DLINK_BW": 157286400
+                }
+            }
+        }
+    },
+    "device_inventory": {
+        "NwDeviceCategory.BACKBONE": {
+            "NwDevice.BB_SWITCH": 1,
+            "NwDevice.BB_AP": 1
+        }
+    },
+    "links": {
+        "BB_SWITCH.0 -> BB_AP.0": {
+            "GnInfoEnum.SRC_LINK_TYPE": "LinkType.ANY",
+            "GnInfoEnum.DST_LINK_TYPE": "LinkType.WAN",
+            "GnInfoEnum.LATENCY": 2
+        },
+        "BB_AP.0 -> BB_SWITCH.0": {
+            "GnInfoEnum.SRC_LINK_TYPE": "LinkType.WAN",
+            "GnInfoEnum.DST_LINK_TYPE": "LinkType.ANY",
+            "GnInfoEnum.LATENCY": 2
+        }
+    }
+}
