@@ -25,7 +25,7 @@ class NetManager(object):
     _HOST_PREFIX = 'h'
     _SWITCH_PREFIX = 's'
     _PORT_START = 18800
-    _DEFAULT_IMG = "kumokay/heliot_host:v1"
+    _DEFAULT_IMG = "chenyuxin/heliot_host"
 
     def __init__(self, net, docker_subnet_ip='172.18.0.1'):
         self._net = net
