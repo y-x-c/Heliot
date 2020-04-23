@@ -6,12 +6,12 @@ config = Config(folderpath='sample_configs/config_basic')
 
 all_task = config.all_task_data
 all_nw = config.all_nw_device_data
-n_camera = 20
+n_camera = 10
 
 for camera_id in range(2, n_camera):
     all_task.add_task(
         'task_camera{:d}'.format(camera_id),
-        exec_cmd = {"default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"}
+        exec_cmd = {"default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"}
     )
     all_task.add_link(src='task_camera{:d}'.format(camera_id), dst='task_findObject', traffic=83886080)
     all_task.add_mapping(
@@ -21,5 +21,5 @@ for camera_id in range(2, n_camera):
     )
     config.add_dev_link('CAMERA.{:d}'.format(camera_id), 'BB_AP.0', 30)
 
-config.export_data(folderpath='sample_configs/config_basic_20')
+config.export_data(folderpath='sample_configs/config_basic_%d' % n_camera)
 

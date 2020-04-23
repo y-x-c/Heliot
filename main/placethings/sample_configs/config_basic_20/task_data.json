@@ -2,147 +2,147 @@
     "task_info": {
         "task_camera1": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera0": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera3": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera2": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera5": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera4": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera7": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera6": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera9": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera8": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_findObject": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python latency_test_server.py"
+                "default": "cd /opt/github/placethings && python latency_test_server.py > /tmp/latency.log &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera19": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera18": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera11": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera10": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera13": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera12": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera15": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera14": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera17": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
         },
         "task_camera16": {
             "GtInfoEnum.EXEC_CMD": {
-                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} {self_addr} &> /dev/null &"
             },
             "GtInfoEnum.LATENCY_INFO": {},
             "GtInfoEnum.RESRC_RQMT": {}
