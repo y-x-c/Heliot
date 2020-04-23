@@ -3,7 +3,7 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
-import msgpackrpc
+import zerorpc
 import base64
 import logging
 import io
@@ -22,10 +22,11 @@ update_rootlogger(level=logging.INFO)
 log = logging.getLogger()
 
 fps = 100
-inference_latency = 1/fps
+inference_latency = 1./fps
 
 class InferenceServer(object):
-    def push(self, data, sent_time):
+    def push(self, data):
+        sent_time = data['start_time']
         latency_trans = time.time() - sent_time
 
         start_time = time.time()
@@ -33,14 +34,11 @@ class InferenceServer(object):
 
         latency_comp = time.time() - start_time
 
-        print(sent_time, latency_trans, latency_comp)
+        print(sent_time, latency_trans, latency_comp, data['img_id'], data['self_id'])
 
         return 'done'
 
-ip = 'localhost'
-port = 18800
-
-server = msgpackrpc.Server(InferenceServer())
-server.listen(msgpackrpc.Address(ip, port))
-server.start()
+server = zerorpc.Server(InferenceServer())
+server.bind('tcp://0.0.0.0:18800')
+server.run()
 
