@@ -6,7 +6,7 @@ config = Config(folderpath='sample_configs/config_basic')
 
 all_task = config.all_task_data
 all_nw = config.all_nw_device_data
-n_camera = 10
+n_camera = 20
 
 for camera_id in range(2, n_camera):
     all_task.add_task(
@@ -21,5 +21,5 @@ for camera_id in range(2, n_camera):
     )
     config.add_dev_link('CAMERA.{:d}'.format(camera_id), 'BB_AP.0', 30)
 
-config.export_data(folderpath='sample_configs/config_basic_10')
+config.export_data(folderpath='sample_configs/config_basic_20')
 

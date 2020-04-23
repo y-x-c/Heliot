@@ -1,0 +1,236 @@
+{
+    "task_info": {
+        "task_camera1": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera0": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera3": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera2": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera5": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera4": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera7": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera6": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera9": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera8": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_findObject": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python latency_test_server.py"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera19": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera18": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera11": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera10": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera13": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera12": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera15": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera14": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera17": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        },
+        "task_camera16": {
+            "GtInfoEnum.EXEC_CMD": {
+                "default": "cd /opt/github/placethings && python gen_dummy_image.py {next_ip} {next_port} &> /dev/null &"
+            },
+            "GtInfoEnum.LATENCY_INFO": {},
+            "GtInfoEnum.RESRC_RQMT": {}
+        }
+    },
+    "task_mapping": {
+        "task_camera1": "CAMERA.1",
+        "task_camera0": "CAMERA.0",
+        "task_camera3": "CAMERA.3",
+        "task_camera2": "CAMERA.2",
+        "task_camera5": "CAMERA.5",
+        "task_camera4": "CAMERA.4",
+        "task_camera7": "CAMERA.7",
+        "task_camera6": "CAMERA.6",
+        "task_camera9": "CAMERA.9",
+        "task_camera8": "CAMERA.8",
+        "task_findObject": "EDGE_SERVER.0",
+        "task_camera19": "CAMERA.19",
+        "task_camera18": "CAMERA.18",
+        "task_camera11": "CAMERA.11",
+        "task_camera10": "CAMERA.10",
+        "task_camera13": "CAMERA.13",
+        "task_camera12": "CAMERA.12",
+        "task_camera15": "CAMERA.15",
+        "task_camera14": "CAMERA.14",
+        "task_camera17": "CAMERA.17",
+        "task_camera16": "CAMERA.16"
+    },
+    "task_links": {
+        "task_camera9 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera16 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera8 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera19 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera4 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera1 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera6 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera13 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera0 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera11 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera2 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera17 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera10 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera15 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera18 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera14 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera5 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera7 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera3 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        },
+        "task_camera12 -> task_findObject": {
+            "GtInfoEnum.TRAFFIC": 83886080
+        }
+    }
+}

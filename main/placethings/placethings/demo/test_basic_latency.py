@@ -39,6 +39,7 @@ def _check_support_config(config_name):
         "sample_configs/config_basic",
         "sample_configs/config_basic_5",
         "sample_configs/config_basic_10",
+        "sample_configs/config_basic_20",
     }
     assert config_name in _SUPPORTED_CONFIG
 

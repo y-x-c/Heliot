@@ -1,0 +1,169 @@
+{
+    "device_spec": {
+        "DeviceCategory.PROCESSOR": {
+            "Device.EDGE_SERVER": {
+                "GdInfoEnum.COST": 3.06,
+                "GdInfoEnum.HARDWARE": {
+                    "Hardware.CPU": 8,
+                    "Hardware.HD": 140737488355328,
+                    "Hardware.RAM": 137438953472,
+                    "Hardware.GPU": 1
+                },
+                "GdInfoEnum.NIC": {
+                    "LinkInfo.ULINK_BW": 10737418240,
+                    "LinkInfo.PROTOCOL": "NwLink.ETHERNET",
+                    "LinkInfo.N_LINKS": 1,
+                    "LinkInfo.DLINK_BW": 10737418240
+                }
+            }
+        },
+        "DeviceCategory.SENSOR": {
+            "Device.CAMERA": {
+                "GdInfoEnum.COST": 0,
+                "GdInfoEnum.HARDWARE": {},
+                "GdInfoEnum.NIC": {
+                    "LinkInfo.ULINK_BW": 104857600,
+                    "LinkInfo.PROTOCOL": "NwLink.WIFI",
+                    "LinkInfo.N_LINKS": 1,
+                    "LinkInfo.DLINK_BW": 104857600
+                }
+            }
+        }
+    },
+    "device_inventory": {
+        "DeviceCategory.PROCESSOR": {
+            "Device.EDGE_SERVER": 1
+        },
+        "DeviceCategory.SENSOR": {
+            "Device.CAMERA": 20
+        }
+    },
+    "links": {
+        "CAMERA.8 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.0 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.7 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.17 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.5 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "EDGE_SERVER.0 -> BB_SWITCH.0": {
+            "GnInfoEnum.LATENCY": 2
+        },
+        "CAMERA.10 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.2 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.1 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.6 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.4": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.11 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_SWITCH.0 -> EDGE_SERVER.0": {
+            "GnInfoEnum.LATENCY": 2
+        },
+        "BB_AP.0 -> CAMERA.6": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.19 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.12 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.13 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.11": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.10": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.13": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.16 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.15": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.14 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.17": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.16": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.19": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.18": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.9 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.3 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.5": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.18 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.7": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.12": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.1": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.3": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.2": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.4 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "CAMERA.15 -> BB_AP.0": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.9": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.8": {
+            "GnInfoEnum.LATENCY": 30
+        },
+        "BB_AP.0 -> CAMERA.14": {
+            "GnInfoEnum.LATENCY": 30
+        }
+    }
+}
