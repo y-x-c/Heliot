@@ -38,7 +38,10 @@ class InferenceServer(object):
 
         return 'done'
 
-server = zerorpc.Server(InferenceServer())
-server.bind('tcp://0.0.0.0:18800')
-server.run()
-
+while True:
+    try:
+        server = zerorpc.Server(InferenceServer())
+        server.bind('tcp://0.0.0.0:18800')
+        server.run()
+    except Exception:
+        pass
